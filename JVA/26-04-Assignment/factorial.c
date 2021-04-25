@@ -19,3 +19,9 @@ int factorial(int number)
     else
         return(number * factorial(number-1));
 }
+
+/*
+Enter the number: 4                                                                                                                           
+                                                                                                                                              
+Factorial of the number 4 is 24
+*/
