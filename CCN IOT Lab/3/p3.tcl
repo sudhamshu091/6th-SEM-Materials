@@ -14,7 +14,8 @@ set n6 [$ns node]
 $n1 label "Source/UDP" 
 $n3 label "Error Node" 
 $n5 label "Destination" 
-;#The below code is used to create a two Lans (Lan1 and #Lan2). $ns make-lan "$n0 $n1 $n2 $n3" 100Mb 10ms LL Queue/DropTail Mac/802_3 
+;#The below code is used to create a two Lans (Lan1 and #Lan2). 
+$ns make-lan "$n0 $n1 $n2 $n3" 100Mb 10ms LL Queue/DropTail Mac/802_3 
 $ns make-lan "$n4 $n5 $n6 " 100Mb 10ms LL Queue/DropTail Mac/802_3 
 $ns duplex-link $n3 $n6 100Mb 10ms DropTail 
 set udp1 [new Agent/UDP] 
