@@ -1,0 +1,2 @@
+gnuplot> filenames = "file1 file2"
+gnuplot> plot for [i in filenames] i using 1:2 with lines
