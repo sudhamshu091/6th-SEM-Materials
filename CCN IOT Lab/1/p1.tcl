@@ -6,7 +6,8 @@ $ns namtrace-all $nf ;#main class object ns linked with nam file object nf
 set n0 [$ns node] ;#creation of nodes 
 set n1 [$ns node] 
 set n2 [$ns node] 
-set n3 [$ns node] $ns duplex-link $n0 $n2 20Mb 10ms DropTail ;#forming duplex connection between the nodes 
+set n3 [$ns node] 
+$ns duplex-link $n0 $n2 20Mb 10ms DropTail ;#forming duplex connection between the nodes 
 $ns duplex-link $n1 $n2 10Mb 10ms DropTail ;#and vary the bandwidth in this link 
 $ns duplex-link $n2 $n3 0.7Mb 10ms DropTail 
 $ns set queue-limit $n0 $n2 10 ;#Assigning Queuesize between the nodes 
@@ -29,7 +30,8 @@ $ns connect $udp1 $null
 $cbr0 set packetSize_ 512 ;#assigning values of packet size and time interval 
 $cbr0 set interval_ 0.001 
 $cbr1 set packetSize_ 512 
-$cbr1 set interval_ 0.005 proc finish { } { ;#terminate Simulation 
+$cbr1 set interval_ 0.005 
+proc finish { } { ;#terminate Simulation 
 global ns nf tf 
 $ns flush-trace 
 close $tf 
