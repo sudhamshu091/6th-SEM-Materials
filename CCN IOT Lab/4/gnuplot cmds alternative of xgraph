@@ -1,2 +1,8 @@
-gnuplot> filenames = "file1 file2"
-gnuplot> plot for [i in filenames] i using 1:2 with lines
+// to install gnuplot on ubuntu
+sudo apt-get update          
+sudo apt-get install gnuplot     
+// instead of xgraph use these cmds
+gnuplot
+filenames = "file1 file2"
+plot for [i in filenames] i using 1:2 with lines
+exit()   // after analyzing graph , to exit gnuplot
