@@ -11,7 +11,8 @@ $ns make-lan "$n0 $n1 $n2 $n3" 10Mb 10ms LL Queue/DropTail Mac/802_3
 set tcp1 [new Agent/TCP] 
 set ftp1 [new Application/FTP] 
 set sink1 [new Agent/TCPSink] 
-set tcp2 [new Agent/TCP] set ftp2 [new Application/FTP] 
+set tcp2 [new Agent/TCP] 
+set ftp2 [new Application/FTP] 
 set sink2 [new Agent/TCPSink] 
 $ns attach-agent $n0 $tcp1 
 $ftp1 attach-agent $tcp1 
