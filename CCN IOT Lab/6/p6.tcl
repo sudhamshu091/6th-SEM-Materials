@@ -5,7 +5,7 @@ set nf [open p6.nam w]
 $ns namtrace-all $nf 
 #Using routing protocol 
 $ns rtproto LS 
-#Creation of Nodes 
+#Creation of Nodes  
 for {set i 0} {$i < 12} {incr i} { 
  set n($i) [$ns node] 
  } 
