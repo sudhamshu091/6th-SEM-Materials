@@ -5,7 +5,7 @@ set nf [open p1.nam w] ;#open nam file p1.nam in writable mode
 $ns namtrace-all $nf ;#main class object ns linked with nam file object nf 
 set n0 [$ns node] ;#creation of nodes 
 set n1 [$ns node] 
-set n2 [$ns node] 
+set n2 [$ns node]  
 set n3 [$ns node] 
 $ns duplex-link $n0 $n2 20Mb 10ms DropTail ;#forming duplex connection between the nodes 
 $ns duplex-link $n1 $n2 10Mb 10ms DropTail ;#and vary the bandwidth in this link 
