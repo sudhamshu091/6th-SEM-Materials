@@ -1,5 +1,4 @@
 set ns [new Simulator] 
- 
 set tf [open p5.tr w] 
 $ns trace-all $tf 
 set nf [open p5.nam w] 
