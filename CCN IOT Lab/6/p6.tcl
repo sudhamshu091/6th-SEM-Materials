@@ -7,7 +7,6 @@ $ns namtrace-all $nf
 #Using routing protocol
 $ns rtproto LS
 
-
 #Creation of Nodes
 for {set i 0} {$i < 12} {incr i} {
     set n($i) [$ns node]
