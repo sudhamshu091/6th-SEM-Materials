@@ -6,7 +6,7 @@ $ns trace-all $tf
 set nf [open p2.nam w] 
 $ns namtrace-all $nf 
 set n0 [$ns node] 
-set n1 [$ns node] 
+set n1 [$ns node]
 set n2 [$ns node] 
 set n3 [$ns node] 
 $ns duplex-link $n0 $n2 20Mb 10ms DropTail 
