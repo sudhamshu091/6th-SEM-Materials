@@ -25,6 +25,7 @@ $ns node-config -adhocRouting DSDV \
 
 # GOD (General Operations Director) is an object to create wireless environment
 create-god 3
+
 set n0 [$ns node]
 set n1 [$ns node]
 set n2 [$ns node]
