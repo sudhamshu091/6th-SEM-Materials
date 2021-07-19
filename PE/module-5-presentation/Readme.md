@@ -40,3 +40,14 @@
 - All the currents flows through Q1
 - D3 is necessary to protect Q1 in case the generator charging circuit tries to charge the battery to more than 13.8 volts
 
+<h4>Automatic Charger using LM317K with output current 1.5 A</h4>
+
+![](e.jpg)
+
+- AC main voltage 21V DC.
+- Output voltage is about 15VDC (approximately) and current 1.5 A
+- Input voltage of LM317 should be about 17V to 22V DC. 
+- We need full output power and low ripple voltage.So, the filter capacitor is 4,400uF(2,200uF+2,200uF).
+- Change R3 and R2 to set the output voltage. Which control with S2.R2 and R3 connect together in parallel
+- The diode D3 and D4 help protect a reverse voltage from an output load.
+
