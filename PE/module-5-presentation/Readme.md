@@ -49,5 +49,5 @@
 - Input voltage of LM317 should be about 17V to 22V DC. 
 - We need full output power and low ripple voltage.So, the filter capacitor is 4,400uF(2,200uF+2,200uF).
 - Change R3 and R2 to set the output voltage. Which control with S2.R2 and R3 connect together in parallel
-- The diode D3 and D4 help protect a reverse voltage from an output load.
+- The diode D5 and D6 help protect a reverse voltage from an output load.
 
