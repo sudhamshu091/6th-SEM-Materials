@@ -25,4 +25,18 @@
 
 ![](b.jpg)
 
+<b>Switched Float Charging Curve</b><br>
+
+![](c.jpg)
+
+<h4>Automatic 12V DC Trickle Charger (Float Charger)</h4>
+
+![](d.jpg)
+
+- 12Ah battery should tolerate a constant trickle current of 100 mA.
+- Full wave bridge rectifier, the dc voltage will be about 16 volts peak.
+- R1 shunts any zener leakage to ground to prevent Q1 from turning on prematurely. 
+- Battery is float charged to 13.8volts
+- All the currents flows through Q1
+- D3 is necessary to protect Q1 in case the generator charging circuit tries to charge the battery to more than 13.8 volts
 
