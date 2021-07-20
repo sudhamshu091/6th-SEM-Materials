@@ -51,3 +51,6 @@
 - Change R3 and R2 to set the output voltage. Which control with S2.R2 and R3 connect together in parallel
 - The diode D5 and D6 help protect a reverse voltage from an output load.
 
+<h4>Automatic Battery charger using trickle arrangement from M D Singh Textbook</h4>
+
+![](f.jpg)
