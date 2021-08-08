@@ -106,7 +106,7 @@ void SendResponseServer()
                           CelciusValue=(sensorValue*1500)/40960;
                         client.print("Temperature Sensor Value is:");
                                            
-                                            client.println("<mark>");
+                                            client.println("<html>");
                                             client.println( "<h1>");
                                             client.println("<mark>");
                                             client.println(CelciusValue);
