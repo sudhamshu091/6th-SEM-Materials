@@ -12,7 +12,8 @@ set n3 [$ns node]
 $ns duplex-link $n0 $n2 20Mb 10ms DropTail 
 $ns duplex-link $n1 $n2 10Mb 10ms DropTail 
 $ns duplex-link $n2 $n3 0.7Mb 10ms DropTail 
-$ns set queue-limit $n0 $n2 10 $ns set queue-limit $n1 $n2 10 
+$ns set queue-limit $n0 $n2 10 
+$ns set queue-limit $n1 $n2 10 
 $ns set queue-limit $n2 $n3 5 
 set tcp [new Agent/TCP] 
 set udp [new Agent/UDP] 
